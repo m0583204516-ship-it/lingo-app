@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+:root {
+  --navy: #1e3a8a;
+  --brand: #3b82f6;
+  --brand-soft: #dbeafe;
+  --ink: #0f172a;
+  --muted: #334155;
+  --line: #e2e8f0;
+  --canvas: #f1f5f9;
+  --gold: #d97706;
+  --success: #047857;
+  --danger: #b91c1c;
+}
+
+@theme inline {
+  --color-navy: var(--navy);
+  --color-brand: var(--brand);
+  --color-brand-soft: var(--brand-soft);
+  --color-ink: var(--ink);
+  --color-muted: var(--muted);
+  --color-line: var(--line);
+  --color-canvas: var(--canvas);
+  --color-gold: var(--gold);
+  --color-success: var(--success);
+  --color-danger: var(--danger);
+  --font-sans: var(--font-heebo);
+}
+
+* {
+  border-color: var(--line);
+}
+
+html,
+body {
+  background: var(--canvas);
+  color: var(--ink);
+}
+
+.ltr-en {
+  direction: ltr;
+  text-align: left;
+  font-feature-settings: "kern";
+}
+
+.card {
+  background: white;
+  border: 1px solid var(--line);
+  border-radius: 1.25rem;
+  box-shadow: 0 10px 30px -24px rgb(15 23 42 / 0.45);
+}
+
+.focus-ring:focus-visible {
+  outline: 3px solid rgb(59 130 246 / 0.45);
+  outline-offset: 2px;
+}
